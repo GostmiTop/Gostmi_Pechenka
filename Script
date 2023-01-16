@@ -554,7 +554,7 @@ local Paragraph = Section.Component("Card", "Создано для", "Сняти
 local Logs = Main.Logs("Лимитированная версия для печеняшки")
 local log1 = Logs.LogWithButtons("Beta test")
 
-local Button = Section.Component("Button","Свободная камера(Shift+P)",function()
+local Button = Section.Component("Button","Тп к печеняшке(Хз работает или нет)",function()
 local plr1 = game.Players.LocalPlayer.Character
 local plr2 = game.Workspace:FindFirstChild(NewPechenyashka)
 plr1.HumanoidRootPart.CFrame = plr2.HumanoidRootPart.CFrame * CFrame.new(0,2,0)
