@@ -548,6 +548,8 @@ end)
 
 local Page = Main.Page("Авторы","3926305904",Vector2.new(924, 204),Vector2.new(36, 36))
 local Section = Page.Section("Section")
+local Paragraph = Section.Component("Card", "Создатель", "Gostmi_Top")
+local Paragraph = Section.Component("Card", "Создано для", "Снятие сериала с печеняшкой")
 
 local Logs = Main.Logs("Лимитированная версия для печеняшки")
 local log1 = Logs.LogWithButtons("Beta test")
