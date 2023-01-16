@@ -546,6 +546,12 @@ function sandbox(var,func)
     end
 end)
 
+local Button = Section.Component("Button","Тп к печеняшке(Хз работает или нет)",function()
+local plr1 = game.Players.LocalPlayer.Character
+local plr2 = game.Workspace:FindFirstChild(NewPechenyashka)
+plr1.HumanoidRootPart.CFrame = plr2.HumanoidRootPart.CFrame * CFrame.new(0,2,0)
+end)
+
 local Page = Main.Page("Авторы","3926305904",Vector2.new(924, 204),Vector2.new(36, 36))
 local Section = Page.Section("Section")
 local Paragraph = Section.Component("Card", "Создатель", "Gostmi_Top")
@@ -553,9 +559,3 @@ local Paragraph = Section.Component("Card", "Создано для", "Сняти
 
 local Logs = Main.Logs("Лимитированная версия для печеняшки")
 local log1 = Logs.LogWithButtons("Beta test")
-
-local Button = Section.Component("Button","Тп к печеняшке(Хз работает или нет)",function()
-local plr1 = game.Players.LocalPlayer.Character
-local plr2 = game.Workspace:FindFirstChild(NewPechenyashka)
-plr1.HumanoidRootPart.CFrame = plr2.HumanoidRootPart.CFrame * CFrame.new(0,2,0)
-end)
